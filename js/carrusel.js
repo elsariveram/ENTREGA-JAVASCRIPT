@@ -31,7 +31,7 @@ function DefinirDia() {
 
 // Llamada a la función para definir el día
 DefinirDia();
-dia="jueves"
+
 function DefinirMisterio() {
     
    switch (dia) {
