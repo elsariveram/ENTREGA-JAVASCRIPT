@@ -1,0 +1,184 @@
+
+/* Estilos FORMULARIO */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#seccionRosario {
+    /* display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse; */
+    height:200px;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    margin-top: 20%;
+
+}
+label {
+    margin: 10px;
+    font-weight: bold;
+}
+input {
+    margin: 10px;
+padding: 8px;
+}
+button {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #9900ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;;
+}
+button:hover {
+    background-color: #60038b;
+    transform: scale(1.05);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    height: 10%;
+}
+
+
+/* estilos oracion AVEMARIA */
+.carrusel {
+    margin-top: 5%;
+    display: flex;
+    overflow: hidden;
+    /* width: 100%; */
+    justify-content: center; /* Alinea el carrusel al centro horizontalmente */
+}
+.ocultar {
+    display: none;
+}
+.diapositiva {
+    display: none;
+    flex-shrink: 0;
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.activa {
+    display: block;
+}
+
+img {
+    width: 400px; /* Establece el ancho deseado para las imágenes */
+    height: 400px;
+}
+
+.descripcion {
+    text-align: center;
+    font-size: 30px; 
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+.contador{
+    /* display: flex; */
+    /* justify-content: center */
+    align-items: start;
+}
+.peticiones {
+    display: flex;
+    justify-content: center
+}
+.peticionesTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+   text-align: center
+}
+
+
+/* Estilos para BOTONES DE ORACIONES INDIVIDUALES */
+.botones-oraciones-seccion {
+    text-align: center;
+}
+
+#btnIngresoRosario{
+    background-color: #9900ff;
+    
+    
+}
+#btnIngresoRosario:hover {
+    background-color: #60038b;
+}
+.boton-oracion {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-oracion:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.boton-oracion:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+/* Estilos para BOTONES DE SALIR */
+.botonSalirRosarioDIV {
+    display: flex;
+    justify-content: start;
+}
+
+/* Estilos para parrafos */
+
+.parrafo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.h3Misterio{
+    margin-right: 20%;
+    margin-left: 20%;
+}
