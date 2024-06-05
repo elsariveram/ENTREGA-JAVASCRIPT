@@ -1,3 +1,86 @@
+// <li id="contglobal">
+    //             global 1
+    //         </li>
+
+
+
+//recoge datos de sessionStorage
+ var storageNombre = sessionStorage.getItem('nombre');
+ console.log(storageNombre);
+ var storagePeticion = sessionStorage.getItem('peticion');
+ console.log(storagePeticion);
+ var storageGracias = sessionStorage.getItem('gracias');
+ console.log(storageGracias);
+ 
+//  Swal.fire({
+     
+//      html: `
+//      <h1 id="TituloFelicidades">¡Felicidades ${storageNombre}!</h1>
+//      <p id="pFelicidades">Con la ayuda e intercesión maternal de María, has intercedido por: ${storagePeticion} y agradecido por: ${storageGracias}</p>
+//      <p>Rezando:</p>
+     
+//      <table>
+//          <tr>
+//              <th>Número</th>
+//              <th>Misterio</th>
+//          </tr>
+//          <tr>
+//              <td id="tdNumeroMisterio">1</td>
+//              <td id="tdMisterio">Misterio</td>
+//          </tr>
+//          <tr>
+//              <td id="tdNumeroCuenta">2</td>
+//              <td id="tdCuenta">Cuentas</td>
+//          </tr>
+//      </table>
+     
+//      <p>Que tus manos, unidas en oración a María, sigan esparciendo flores de bondad y coronas de amor. Y que ella siga intercediendo por ti y tus intenciones, guiándote con su ternura maternal.</p>
+
+
+//      `,
+//      showCloseButton: true,
+    
+//      focusConfirm: false,
+//      confirmButtonText: `
+//        <i class="fa fa-thumbs-up"></i> ¡Gracias!
+//      `,
+//      confirmButtonAriaLabel: "Thumbs up, great!",
+     
+//    });
+
+//limpia sessionStorage
+ sessionStorage.clear();
+
+---------------------------------------------------
+
+<h1 id="TituloFelicidades">¡Felicidades ${varn}!</h1>
+<p id="pFelicidades">Con la ayuda e intercesión maternal de María, has intercedido por: ${usuarioActual.peticion} y agradecido por: ${agradecimiento}</p>
+<p>Rezando:</p>
+
+<table>
+    <tr>
+        <th>Número</th>
+        <th>Misterio</th>
+    </tr>
+    <tr>
+        <td id="tdNumeroMisterio">1</td>
+        <td id="tdMisterio">Misterio</td>
+    </tr>
+    <tr>
+        <td id="tdNumeroCuenta">2</td>
+        <td id="tdCuenta">Cuentas</td>
+    </tr>
+</table>
+
+<p>Que tus manos, unidas en oración a María, sigan esparciendo flores de bondad y coronas de amor. Y que ella siga intercediendo por ti y tus intenciones, guiándote con su ternura maternal.</p>
+
+
+
+
+
+
+
+
 
 <div class="carrusel">
 

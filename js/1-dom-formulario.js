@@ -4,6 +4,7 @@ let VarGracias="";
 let misterio;
  
 
+
 //DOM FORMULARIO//  
         // Creamos los elementos del formulario
         var formularioSection = document.createElement("section");
@@ -20,7 +21,7 @@ let misterio;
         var nombreInput = document.createElement("input");
         nombreInput.type = "text";
         nombreInput.id = "nombre";
-        nombreInput.value = "Juan Pérez";
+        nombreInput.value = "Juan";
         
         var peticionLabel = document.createElement("label");
         peticionLabel.htmlFor = "peticion";
@@ -87,6 +88,10 @@ let misterio;
                         VarNombre = nombreInput.value;
                         VarPeticion = peticionInput.value;
                         VarGracias= agradecimientosInput.value;
+//---------------------//guardar en sessionStorage
+                        sessionStorage.setItem('nombre', VarNombre);
+                        sessionStorage.setItem('peticion', VarPeticion);
+                        sessionStorage.setItem('gracias', VarGracias);
 
                        
 

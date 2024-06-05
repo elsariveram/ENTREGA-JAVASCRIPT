@@ -11,6 +11,11 @@ let contadorPorcentajeCuenta = 0; //1-10
 let contadorCuenta = 1;
 let contadorMisterio = 1;
 let imgMisterio;
+
+
+
+
+
 //DEFINIR dia
 let dia; // Declaración de la variable dia 
 
@@ -165,12 +170,7 @@ function ReflexionMisterio() {
 
 }
 ReflexionMisterio();
-        
-console.log(VarNombre)
-console.log(VarPeticion)
-console.log(VarGracias)
-console.log(dia)
-console.log(misterio)
+
 
 //MENSAJE BIENVENIDA
 
@@ -187,8 +187,42 @@ console.log(misterio)
         }
       });
 
+
+      //REVISAR-------------
+  function ocultarContador (){
+    if (contadorCuenta===11) {      
+     ///////////       
+         var OcultarContador = document.getElementById('cuenta')
+         OcultarContador.classList.add('ocultar')
+         var OcultarContador2 = document.getElementById('porcentajeCuenta')
+         OcultarContador2.classList.add('ocultar')
+    }
+    else if (contadorGlobal>=12 && contadorGlobal<=112||contadorGlobal>=123 && contadorGlobal<=223 ||contadorGlobal>=234 && contadorGlobal<=334 ||contadorGlobal>=345 && contadorGlobal<=445 ||contadorGlobal>=456 && contadorGlobal<=556) {
+         ////////
+         var OcultarContador = document.getElementById('cuenta')
+         OcultarContador.classList.remove('ocultar')
+         var OcultarContador2 = document.getElementById('porcentajeCuenta')
+         OcultarContador2.classList.remove('ocultar')
+    }
+  };   
+
+
+
  
 //INSERTA HTMLS----------
+function ocultarBoton (){
+    if (contadorGlobal===1|| contadorGlobal===555) {
+        var botonOcultar = document.querySelector('.BotonOcultar')
+        botonOcultar.classList.add('ocultar')
+        if (contadorGlobal===555) {
+            var botonOcultarFinal = document.querySelector('.BotonOcultarFinal')
+        botonOcultarFinal.classList.add('ocultar')
+        }
+        
+
+
+        }
+}
                 // Definir las diferentes vistas en un array
                 var vistas = [
                     contadorHTML +carruselHTML+ botonesDivHTML+HTMLPeticiones+botonSalirHTML,
@@ -199,14 +233,16 @@ console.log(misterio)
                 // Función para insertar el HTML inicial
                 function insertarHTMLInicial() {
                     var ingresoRosarioSection = document.getElementById('IngresoRosario');
-                    ingresoRosarioSection.innerHTML = vistas[0];
-                    var botonOcultar = document.querySelector('.BotonOcultar')
-                    botonOcultar.classList.add('ocultar')
-                    
-                    
-                    
-                    
+                    ingresoRosarioSection.innerHTML = vistas[0];  
+                    ocultarBoton();
+                    // if (contadorGlobal===1) {
+                    //     var botonOcultar = document.querySelector('.BotonOcultar')
+                    //     botonOcultar.classList.add('ocultar')
+                        
+                    //     }          
                 }
+
+                
                 
                 // Función para cambiar al siguiente HTML
                 function HTMLSiguiente() {
@@ -224,18 +260,21 @@ console.log(misterio)
                     }
                 }
 
-                // Función de salir (opcional, según tu lógica)
+                // Función de salir 
                 function HTMLSalir() {
-                    alert("Saliendo...");
-                    // Aquí puedes definir lo que debe ocurrir cuando se presiona el botón Salir
+                    window.location.href = 'index.html'; 
+
                 }
+                
 
                 // Llama a la función para insertar el HTML inicial
                 insertarHTMLInicial();
 
 
-//reflexion por misterio
-
+//SESSION STORAGE ------------------
+                sessionStorage.setItem('cuenta', contadorCuenta);
+                sessionStorage.setItem('misterioNumero', contadorMisterio);
+                sessionStorage.setItem('misterio', misterio);
 
 ///AQUI INSERTO EL TEXTO HTML INICIAL DEL PRIMER MISTERIO--------------------------------------------------------
                 document.getElementById('tituloMisterio').textContent = contadorMisterio+" misterio "+misterioCorto;
@@ -244,17 +283,24 @@ console.log(misterio)
                 document.getElementById('peticiones').textContent = VarPeticion;
                 document.getElementById('graciasPor').textContent = VarGracias;
 
-
+                
+                
 // FUNCIONES PARA MANEJAR LAS DIAPOSITIVAS   AVEMARIA
         let diapositivaActual = 0;
         const diapositivas = document.querySelectorAll('.diapositiva');
 
+        
+
         function diapositivaSiguiente() {
             actualizarContadores(true);//ACTUALIZA CONTADOR
-            if (contadorGlobal===3) {
+            ocultarContador();
+            ocultarBoton();//OCULTA BOTON
+            if (contadorGlobal===2||contadorGlobal===554) {
                 //!!!CAMBIAR CUANDO LAS CONDICIONES ESTEN (CONTADOR) PARA OCULTAR BOTON---------------------------------------------------------
                                 var botonOcultar = document.querySelector('.BotonOcultar')
-                            botonOcultar.classList.remove('ocultar')
+                                botonOcultar.classList.remove('ocultar')
+                                var botonOcultarFinal = document.querySelector('.BotonOcultarFinal')
+                                 botonOcultarFinal.classList.remove('ocultar')
                             }
             else if (contadorGlobal === 22 || contadorGlobal === 32 || contadorGlobal === 42 || contadorGlobal === 52 || contadorGlobal === 62 || contadorGlobal === 72 || contadorGlobal === 82 || contadorGlobal === 92 || contadorGlobal === 102 ||  contadorGlobal === 133 || contadorGlobal === 143 || contadorGlobal === 153 || contadorGlobal === 163 || contadorGlobal === 173 || contadorGlobal === 183 || contadorGlobal === 193 || contadorGlobal === 203 || contadorGlobal === 213   || contadorGlobal === 244 || contadorGlobal === 254 || contadorGlobal === 264 || contadorGlobal === 274 || contadorGlobal === 284 || contadorGlobal === 294 || contadorGlobal === 304 || contadorGlobal === 314 || contadorGlobal === 324    || contadorGlobal === 355 || contadorGlobal === 365 || contadorGlobal === 375 || contadorGlobal === 385 || contadorGlobal === 395 || contadorGlobal === 405 || contadorGlobal === 415 || contadorGlobal === 425  || contadorGlobal === 435  || contadorGlobal === 466 || contadorGlobal === 476 || contadorGlobal === 486 || contadorGlobal === 496 || contadorGlobal === 506 || contadorGlobal === 516 || contadorGlobal === 526 || contadorGlobal === 536 || contadorGlobal === 546 ){
                 diapositivaActual = (diapositivaActual + 11) % diapositivas.length;
@@ -266,7 +312,12 @@ console.log(misterio)
     
         }
 
+        
+        
+
+
         function diapositivaAnterior() {
+            
             // Si el contador global es 22, avanza 10 diapositivas hacia adelante en lugar de retroceder una
             if (contadorGlobal === 22 || contadorGlobal === 32 || contadorGlobal === 42 || contadorGlobal === 52 || contadorGlobal === 62 || contadorGlobal === 72 || contadorGlobal === 82 || contadorGlobal === 92 || contadorGlobal === 102 ||  contadorGlobal === 133 || contadorGlobal === 143 || contadorGlobal === 153 || contadorGlobal === 163 || contadorGlobal === 173 || contadorGlobal === 183 || contadorGlobal === 193 || contadorGlobal === 203 || contadorGlobal === 213   || contadorGlobal === 244 || contadorGlobal === 254 || contadorGlobal === 264 || contadorGlobal === 274 || contadorGlobal === 284 || contadorGlobal === 294 || contadorGlobal === 304 || contadorGlobal === 314 || contadorGlobal === 324    || contadorGlobal === 355 || contadorGlobal === 365 || contadorGlobal === 375 || contadorGlobal === 385 || contadorGlobal === 395 || contadorGlobal === 405 || contadorGlobal === 415 || contadorGlobal === 425  || contadorGlobal === 435  || contadorGlobal === 466 || contadorGlobal === 476 || contadorGlobal === 486 || contadorGlobal === 496 || contadorGlobal === 506 || contadorGlobal === 516 || contadorGlobal === 526 || contadorGlobal === 536 || contadorGlobal === 546) {
                 diapositivaActual = (diapositivaActual + 9) % diapositivas.length;
@@ -281,6 +332,8 @@ console.log(misterio)
             
             mostrarDiapositiva(diapositivaActual);
             actualizarContadores(false); // ACTUALIZA CONTADOR
+            ocultarBoton();
+            ocultarContador();
         }
 
 
@@ -299,30 +352,42 @@ console.log(misterio)
 function actualizarContadores(avanzar) {
    if (avanzar) {
        contadorGlobal++;
-       
+    
        if (contadorGlobal>=12 && contadorGlobal<=112||contadorGlobal>=123 && contadorGlobal<=223 ||contadorGlobal>=234 && contadorGlobal<=334 ||contadorGlobal>=345 && contadorGlobal<=445 ||contadorGlobal>=456 && contadorGlobal<=556){ 
         contadorPorcentajeCuenta++;
+
+        sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
         if (contadorPorcentajeCuenta===11){
          contadorPorcentajeCuenta=1; //SI CONTADOR PORCENTAJE % SUPERA EL 10 SE DEVOLVERA A 1
          contadorCuenta++;
+         /////
+         sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
         }
        }
        if (contadorCuenta===11){
         contadorMisterio++;
         contadorCuenta=1; //SI CUENTA PASA A 11, PASA A UN NUEVO MISTERIO Y SE RESETEA A 1
         contadorPorcentajeCuenta=0;//se recetea a 0 Porcentaje
+ 
+         
         ReflexionMisterio();
         document.getElementById('tituloMisterio').textContent = contadorMisterio+" misterio "+misterioCorto;
             document.getElementById('parrafoMisterio').textContent = VarReflexionMisterio;
             document.getElementById('imgMisterio').src = imgMisterio;
+            //////
+            sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
        }
        
        }
    
        else {
         contadorGlobal--;
-        
-    
+        //////////////
+        sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
         // if (contadorGlobal===11&&contadorPorcentajeCuenta===1){
         //     contadorPorcentajeCuenta = 0; // Si contadorPorcentajeCuenta está en 1 y despues de un MISTERIO, se devuelve a 0
         // }
@@ -335,21 +400,33 @@ function actualizarContadores(avanzar) {
             document.getElementById('tituloMisterio').textContent = contadorMisterio+" misterio "+misterioCorto;
             document.getElementById('parrafoMisterio').textContent = VarReflexionMisterio;
             document.getElementById('imgMisterio').src = imgMisterio;
+            ////////////
+            sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
         }
 
         else if (contadorPorcentajeCuenta === 1 && contadorCuenta === 1) {
             contadorPorcentajeCuenta = 0;
+            //////
+            sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
         }
         
          else if (contadorPorcentajeCuenta === 1 && contadorCuenta >=2 && contadorCuenta <= 10) {
             contadorPorcentajeCuenta = 10; // Si contadorPorcentajeCuenta está en 1 (entre cuenta 2 a 10), se devuelve a 10 
             contadorCuenta--;
+            //////
+            sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
         } else if (contadorPorcentajeCuenta >= 2 && contadorPorcentajeCuenta <= 10) {
             contadorPorcentajeCuenta--; // Si contador de porcentaje está entre 2 y 10, se disminuye //SI FUNCIONA
+            ///////
+            sessionStorage.setItem('cuenta', contadorCuenta);
+       sessionStorage.setItem('misterioNumero', contadorMisterio);
         }
     }
    
-document.getElementById('contglobal').textContent = `global ${contadorGlobal}`;
+// document.getElementById('contglobal').textContent = `global ${contadorGlobal}`;
 document.getElementById('misterio').textContent = contadorMisterio+" misterio "+misterioCorto;
 document.getElementById('cuenta').textContent = `Cuenta ${contadorCuenta}`;
 document.getElementById('porcentajeCuenta').textContent = `porcentaje cuenta ${contadorPorcentajeCuenta}0%`;

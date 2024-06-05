@@ -182,3 +182,25 @@ ul {
     margin-right: 20%;
     margin-left: 20%;
 }
+
+
+/* TABLA---------------------------*/
+
+
+table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            text-align: center;
+           
+        }
+        table, th, td {
+            border: 1px solid #bdc3c7;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ecf0f1;
+        }

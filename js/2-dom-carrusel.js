@@ -1,8 +1,20 @@
  
         //crea HTML 
 
+                    
+            var domInicial=` 
+            <section id="domInicial">
+            <h2 id="borrar2">¡Bienvenido al rosario online!</h2>
+            </section>
+            <section id="seccionRosario">
+            <div id="IngresoRosario">
+                <button class="boton-ingreso boton-oracion " id="btnIngresoRosario">Ingresar al Rosario</button>
+            </div>
+
+            </section>`
+
         var botonSalirHTML=`<div class="botonSalirRosarioDIV">
-        <button class="boton-salir boton-oracion " id="btnSalirRosario">Salir</button>
+        <button class="boton-salir boton-oracion " id="btnSalirRosario" onclick="HTMLSalir()">Salir</button>
     </div>`
 
         var HTMLPeticiones=`
@@ -38,7 +50,7 @@
 
          var botonesDivHTML=`<div class="botones">
          <button class="BotonOcultar" onclick="diapositivaAnterior()">Anterior</button>
-             <button onclick="diapositivaSiguiente()">Siguiente</button>
+             <button class="BotonOcultarFinal"onclick="diapositivaSiguiente()">Siguiente</button>
           </div>`
 
           var botonesPadreNuestroHTML=`<div class="botones">
@@ -108,9 +120,7 @@
         var contadorHTML = `
                 <div class="contador">
                 <ul>
-                <li id="contglobal">
-                            global 1
-                        </li>
+                
                     <li id="misterio">
                             Misterio 1
                         </li>
