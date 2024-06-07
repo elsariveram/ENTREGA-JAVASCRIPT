@@ -15,7 +15,7 @@
 
         var botonSalirHTML=`<div class="botonSalirRosarioDIV">
         <button class="boton-salir boton-oracion " id="btnSalirRosario" onclick="HTMLSalir()">Salir</button>
-    </div>`
+                 </div>`
 
         var HTMLPeticiones=`
         <div class="peticionesTexto">
@@ -23,7 +23,7 @@
         <p class="pPeticiones" id="peticiones">Tus peticiones:</p>
         <h2 class="h2Peticiones" ">☀️Agradeces por:</h2>
         <p class="pPeticiones" id="graciasPor">Tus peticiones:</p>
-     </div>`
+                 </div>`
 
         var BienvenidaDivHTML=`
         <div class="divTituloBienvenida carrusel">
@@ -42,21 +42,20 @@
    
          `
 
-
          var botonesBienvenida=`<div class="botones">
          
              <button onclick="HTMLSiguiente()">Siguiente</button>
-          </div>`
+                 </div>`;
 
          var botonesDivHTML=`<div class="botones">
          <button class="BotonOcultar" onclick="diapositivaAnterior()">Anterior</button>
              <button class="BotonOcultarFinal"onclick="diapositivaSiguiente()">Siguiente</button>
-          </div>`
+                 </div>`;
 
           var botonesPadreNuestroHTML=`<div class="botones">
          <button onclick="diapositivaAnteriorPadre()">Anterior</button>
              <button onclick="diapositivaSiguientePadre()">Siguiente</button>
-          </div>`
+                  </div>`;
 
         var carruselMisteriosHTML=`
 
@@ -70,7 +69,7 @@
 
             <h3 class="h3Misterio"> blblabla</h3>
             </div>       
-         </div>`
+                  </div>`;
 
         var carruselPadreNuestroHTML=` <div class="carrusel">
         
@@ -115,7 +114,7 @@
             <div class="descripcion">""</div>
         </div>
 
-    </div>`
+                     </div>`;
 
         var contadorHTML = `
                 <div class="contador">
@@ -133,7 +132,7 @@
                     
 
                 </ul>
-            </div>`
+                     </div>`;
 
         var carruselHTML = `
             
@@ -226,7 +225,7 @@
                     </div>
                     </div>
 
-             `;
+                      `;
         
         var despedidaDivHTML=`
              <div class="divTituloDespedida carrusel">
@@ -242,7 +241,7 @@
               </div>
      
         
-              `
+                  `;
             
        
 

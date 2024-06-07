@@ -6,6 +6,8 @@ let misterio;
 
 
 //DOM FORMULARIO//  
+
+        try {
         // Creamos los elementos del formulario
         var formularioSection = document.createElement("section");
         formularioSection.id = "formulario";
@@ -28,7 +30,6 @@ let misterio;
         peticionLabel.textContent = "Ingresa tus peticiones de intercesión:";
         
         var peticionInput = document.createElement("textarea");
-        // peticionInput.type = "text";
         peticionInput.rows = 4; // Número de filas visibles
         peticionInput.cols = 5; // Número de columnas visibles
         peticionInput.id = "peticion";
@@ -39,7 +40,6 @@ let misterio;
         agradecimientosLabel.textContent = "Ingresa tus agradecimientos:";
         
         var agradecimientosInput = document.createElement("textarea");
-        // agradecimientosInput.type = "text";
         agradecimientosInput.rows = 4; // Número de filas visibles
         agradecimientosInput.cols = 5; // Número de columnas visibles
         agradecimientosInput.id = "agradecimientos";
@@ -62,11 +62,7 @@ let misterio;
         formularioSection.appendChild(form);
         section.appendChild(formularioSection);
 
-
-    //  // Carga dinámicamente el script de BASE DATOS----------------------------------------------------------
-    //  var script2 = document.createElement('script');
-    //  script2.src = 'js/base-datos.js';
-    //  document.body.appendChild(script2);      
+ 
 
 //-------------------//  listeners
 
@@ -75,6 +71,8 @@ let misterio;
 
                     botonIngresar.addEventListener("click", function(event) {
                         event.preventDefault(); // Para evitar un envío del formulario
+
+                        try {
 
                         if (nombreInput.value === null || nombreInput.value.trim() === "") {
                             Swal.fire({
@@ -105,9 +103,31 @@ let misterio;
                     script3.src = 'js/2-dom-carrusel.js';
                     document.body.appendChild(script3);  
                         }
+
+                    } catch (error) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Se ha producido un error con el Botón de Ingreso.',
+                            footer: error,
+                            confirmButtonText: 'Aceptar'
+                          });
+                                         }
                        
 
                     });
+
+
+                } 
+                catch (error) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Se ha producido un error con el Formulario.',
+                        footer: error,
+                        confirmButtonText: 'Aceptar'
+                      });
+                }
 
                    
 
