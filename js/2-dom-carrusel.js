@@ -149,39 +149,39 @@
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-2.jpeg" alt="ImagenPadre 2">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-3.jpeg" alt="ImagenPadre 3">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-4.jpeg" alt="ImagenPadre 4">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-5.jpeg" alt="ImagenPadre 5">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-6.jpeg" alt="ImagenPadre 6">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-7.jpeg" alt="ImagenPadre 7">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-8.jpeg" alt="ImagenPadre 8">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-9.jpeg" alt="ImagenPadre 9">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva DPadre">
                         <img src="assets/img/img-Padre-10.jpeg" alt="ImagenPadre 10">
-                        <div class="descripcion">""</div>
+                        <div class="descripcion"></div>
                     </div>
                     <div class="diapositiva">
                         <img src="assets/img/imagen1.jpeg" alt="Imagen 1">
