@@ -23,7 +23,7 @@ let misterio;
         var nombreInput = document.createElement("input");
         nombreInput.type = "text";
         nombreInput.id = "nombre";
-        nombreInput.value = "Juan";
+       nombreInput.placeholder = "Juan";
         
         var peticionLabel = document.createElement("label");
         peticionLabel.htmlFor = "peticion";
@@ -33,7 +33,7 @@ let misterio;
         peticionInput.rows = 4; // Número de filas visibles
         peticionInput.cols = 5; // Número de columnas visibles
         peticionInput.id = "peticion";
-        peticionInput.value = "Por la salud de mi familia";
+        peticionInput.placeholder = "Por la salud de mi familia";
         
         var agradecimientosLabel = document.createElement("label");
         agradecimientosLabel.htmlFor = "agradecimientos";
@@ -43,7 +43,7 @@ let misterio;
         agradecimientosInput.rows = 4; // Número de filas visibles
         agradecimientosInput.cols = 5; // Número de columnas visibles
         agradecimientosInput.id = "agradecimientos";
-        agradecimientosInput.value = "Por el nuevo trabajo";
+        agradecimientosInput.placeholder = "Por el nuevo trabajo";
         
         var botonIngresar = document.createElement("button");
         botonIngresar.id = "botonIngresar";
